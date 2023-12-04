@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpLog.Databases.MongoDb", "SimpLog.Databases.MongoDb\SimpLog.Databases.MongoDb.csproj", "{DCA491AF-B6B4-4DE8-968B-38BD4A7AA759}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCA491AF-B6B4-4DE8-968B-38BD4A7AA759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCA491AF-B6B4-4DE8-968B-38BD4A7AA759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCA491AF-B6B4-4DE8-968B-38BD4A7AA759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCA491AF-B6B4-4DE8-968B-38BD4A7AA759}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5212AED-ED8D-41E1-B402-6C8644AFC28B}
+	EndGlobalSection
+EndGlobal
