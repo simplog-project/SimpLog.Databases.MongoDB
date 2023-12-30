@@ -1,4 +1,6 @@
 ﻿using SimpLog.Databases.MongoDb.Models.AppSettings;
+using System;
+using System.IO;
 using System.Text.Json;
 
 namespace SimpLog.Databases.MongoDb.Services.ConfigurationServices

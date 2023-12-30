@@ -1,5 +1,6 @@
 ﻿using SimpLog.Databases.MongoDb.Models;
 using SimpLog.Databases.MongoDb.Services.FileServices;
+using System.Threading.Tasks;
 
 namespace SimpLog.Databases.MongoDb.Services.SimpLogServices
 {
@@ -21,18 +22,18 @@ namespace SimpLog.Databases.MongoDb.Services.SimpLogServices
             => await _fileService.Save(message, LogType.Debug, saveInDatabase);
 
         public async Task Info(string message, bool? saveInDatabase = true)
-            => await _fileService.Save(message, LogType.Debug, saveInDatabase);
+            => await _fileService.Save(message, LogType.Info, saveInDatabase);
         
         public async Task Notice(string message, bool? saveInDatabase = true)
-            => await _fileService.Save(message, LogType.Debug, saveInDatabase);
+            => await _fileService.Save(message, LogType.Notice, saveInDatabase);
 
         public async Task Warn(string message, bool? saveInDatabase = true)
-            => await _fileService.Save(message, LogType.Debug, saveInDatabase);
+            => await _fileService.Save(message, LogType.Warn, saveInDatabase);
 
         public async Task Error(string message, bool? saveInDatabase = true)
-            => await _fileService.Save(message, LogType.Debug, saveInDatabase);
+            => await _fileService.Save(message, LogType.Error, saveInDatabase);
 
         public async Task Fatal(string message, bool? saveInDatabase = true)
-            => await _fileService.Save(message, LogType.Debug, saveInDatabase);
+            => await _fileService.Save(message, LogType.Fatal, saveInDatabase);
     }
 }

@@ -1,6 +1,9 @@
 ﻿using SimpLog.Databases.MongoDb.Entities;
 using SimpLog.Databases.MongoDb.Models;
+using System;
+using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using static SimpLog.Databases.MongoDb.Models.Constants;
 
 namespace SimpLog.Databases.MongoDb.Services.FileServices
