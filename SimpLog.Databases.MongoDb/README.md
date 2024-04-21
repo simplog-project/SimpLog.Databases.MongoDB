@@ -1,6 +1,5 @@
 # What is SimpLog
-Simple and very flexible tool for development with .NET Core. Saves logs to a file, or a database where you want. Also gives opportunity to 
-receive logs via email with the proper configuration.
+Simple and very flexible tool for development with .NET Core. Saves logs into an MongoDb database.
 
 # Log Types in SimpLog
 | Type | Description |
@@ -17,7 +16,7 @@ receive logs via email with the proper configuration.
 
 | Features | Description |
 | ----- | ----- |
-| &#128218; Log into database | With SimpLog.Databases.MongoDb you can save logs into a database. It is possible to save it in MongoDb. Have in mind, that if the tables are not created, they will be created automatically in the database from the connection string in SimpLog:Database_Configuration:Connection_String |
+| &#128218; Log into database | With SimpLog.Databases.MongoDb you can save logs into a MongoDb database. Have in mind, that if the tables are not created, they will be created automatically in the database from the connection string in SimpLog:Database_Configuration:Connection_String |
 
 # &#128218; Database structure for logging into a database
 
@@ -73,7 +72,6 @@ Create simplog.json file in the root folder of your startup project. On the same
   {                              
     "Database_Configuration": {             -> Database configurations
       "Connection_String": string,          -> Depending on database type, use the correct connection string.
-      "Global_Database_Type": string,       -> The type of a database. Please spell it correctly "MongoDb". N.B! Be carefull with spelling!
       "Global_Enabled_Save": bool           -> You can globally disable or enable saving into database. Default value is true
     },
     "LogType": {

@@ -12,24 +12,16 @@ namespace SimpLog.Databases.MongoDb.Services.DatabaseServices
         /// <summary>
         /// Depending on the name of the DB, goes to the function for that stuff.
         /// </summary>
-        /// <param name="DbName"></param>
         /// <param name="storeLog"></param>
-        /// <param name="isEmailSend"></param>
-        /// <param name="saveInDatabase"></param>
-        public static void SaveIntoDatabase(string DbName, StoreLog storeLog, bool? isEmailSend, bool? saveInDatabase)
-        {
-            if(DbName.Equals(Global_Database_Type.MongoDb.DisplayName()))
-                InsertIntoMongoDb(storeLog, isEmailSend);
-            else
-                return;
-        }
+        public static void SaveIntoDatabase(StoreLog storeLog)
+            => InsertIntoMongoDb(storeLog);
 
         /// <summary>
         /// Insert Log into the MongoDb database
         /// </summary>
         /// <param name="storeLog"></param>
         /// <param name="isEmailSend"></param>
-        public static void InsertIntoMongoDb(StoreLog storeLog, bool? isEmailSend)
+        public static void InsertIntoMongoDb(StoreLog storeLog)
         {
             //  Make MongoDb Connection
             MongoClient dbClient = new MongoClient(conf.Database_Configuration.Connection_String);

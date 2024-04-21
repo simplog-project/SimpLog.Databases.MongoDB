@@ -7,17 +7,18 @@
     <RootNamespace>SimpLog.Databases.MongoDb</RootNamespace>
     <PackageId>SimpLog.Databases.MongoDb</PackageId>
     <Title>SimpLog.Databases.MongoDb</Title>
-    <Version>0.0.1-alpha1</Version>
+    <Version>1.0.0</Version>
     <Authors>Georgi Chekanov</Authors>
     <Company>Georgi Chekanov</Company>
     <Product>SimpLog</Product>
     <Description>Log from server into MongoDb database.</Description>
-    <Copyright>Copyright (c) Georgi Chekanov 2023</Copyright>
+    <Copyright>Copyright (c) Georgi Chekanov 2024</Copyright>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>log, mongo, log, simple log, database log, mongo log, mongo db log, mongo db</PackageTags>
     <PackageReleaseNotes>- separated functionality for MongoDb from SimpLog</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/simplog-project/SimpLog.Databases.MongoDB</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
